@@ -1,0 +1,19 @@
+<div class="content">
+    <form class="form-inline">
+        <fieldset>
+            <select id="from-curr" class="input-small trigger">
+                {{#each ids}}
+                    <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+            <input type="text" id="from-val" class="input-medium trigger" placeholder="Amount">
+            <span id="rate"> >> </span>
+            <select id="to-curr" class="input trigger">
+                {{#each ids}}
+                    <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+            <input type="text" id="to-val" class="input-medium" disabled>
+        </fieldset>
+    </form>
+</div>
